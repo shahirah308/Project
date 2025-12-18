@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head><title>My Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <body>
+          <header>
+            <a href="#" class="logo"> La fleur Garden</a>
+                <nav class="navbar">
+                        <a href="Homepage.html">HOME</a>
+                        <a href="about.html">ABOUT</a>
+                        <a href="shop.html">SHOP</a>
+                        <a href="bundle.html">PACKAGE</a>
+                        <a href="contacts.html">CONTACT</a>
+                 </nav>
+                
+                 <div class="icons">
+                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                </div>
+         </header>
+
+<script type = "text/javascript">
+
+function computeTotal()
+{
+var customer=cart.customer.value;
+var passiondreams=cart.passiondreams.value;
+var angeldreams=cart.angeldreams.value;
+var rosebox=cart.rosebox.value;
+var lavender=cart.lavender.value;
+var summer=cart.summer.value;
+var sunset=cart.sunset.value;
+var yellowtulips=cart.yellowtulips.value;
+var assortedtulips=cart.assortedtulips.value;
+var carnations=cart.carnations.value;
+var dazzling=cart.dazzling.value;
+var pinkrose=cart.pinkrose.value;
+var rainbow=cart.rainbow.value;
+var pack1=cart.pack1.value;
+var pack2=cart.pack2.value;
+var pack3=cart.pack3.value;
+
+
+if(cart.customer.value=="")
+alert("Check the Customer Name");
+else
+{
+var total= parseFloat(passiondreams) + parseFloat(angeldreams) + parseFloat(rosebox) + parseFloat(lavender)
++ parseFloat(summer) + parseFloat(sunset) + parseFloat(yellowtulips) + parseFloat(assortedtulips) + parseFloat(carnations) 
++ parseFloat(dazzling) + parseFloat(pinkrose) + parseFloat(rainbow) + parseFloat(pack1) + parseFloat(pack2) + parseFloat(pack3); 
+
+
+document.write("<center>*****<b>LA FLEUR GARDEN</b>*****");
+document.write("<br>Bloom Where You Are");
+document.write("<br>(099) 563-4562");
+document.write("<br>938 Aurora Blvd CUBAO");
+document.write("<br>QUEZON CITY, METRO MNL");
+document.write("<br>********************************");
+document.write("<br><center><h1>OFFICIAL RECEIPT</h1>");
+document.write("<br>-------------------------------");
+document.write("<br><br> <h3>Customer Name :  </h3>" + "<h3>"  + customer + "</h3>"  );
+document.write("<br><br> <h3>Total Amount :  </h3>" + "<h3> ₱ "  + total + "</h3>"  );
+
+if(total<=1000)
+document.write("<br><br>Try to Add More " + customer);
+else
+document.write("<br><br><h3>Thank you, " + customer + ". We are happy to serve you! </h3>");
+}
+}
+
+</script>
+<style>
+table {
+background-color: #FEEDF6;
+border-color: #FFF;
+margin: 9rem auto;
+border-collapse: separate;
+border-spacing: 1em;
+}
+th{
+font-family: "Goudy Bookletter 1911", sans-serif;
+font-size: 20px;
+letter-spacing: 1px;
+}
+td{
+padding: 1rem 1.2rem;
+border-radius: 6px;
+font-family: "Goudy Bookletter 1911", sans-serif;
+}
+label{
+font-family: cursive;
+font-size: 15px;
+color: #7F0445;
+padding-left: 0%;
+padding-right: 0%;
+
+}
+.customer {
+text-align: center;
+font-family: "Goudy Bookletter 1911", sans-serif;
+padding-top: 1%;
+padding-left: 0%;
+padding-bottom: 1%;
+}
+.customerr{
+padding-left: 0.7%;
+padding-top: 1%;
+padding-bottom: 1%;
+}
+.cart {
+font-family: "Goudy Bookletter 1911", sans-serif;
+letter-spacing: 1px;
+font-size: 20px;
+padding-top: 1%;
+padding-bottom: 1%;
+}
+
+</style>
+</head>
+
+<body>
+<form name=cart>
+<center><table border=5 width=1300 height=500>
+<tr><th colspan=5>LA FLEUR GARDEN</th></tr>
+
+<tr>
+<td class="customer">👤 Customer Name</td>
+<td class="customerr"><input type=text name=customer size=35></td>
+</tr>
+
+<tr>
+<td class="cart" colspan=5 align=center><b>❀ MY CART ❀</b>
+</tr>
+<tr>
+<td><input type=checkbox onclick=passiondreams.value=1100>
+<input type=hidden name=passiondreams value=0> 
+<label for="passiondreams">Passion Dreams  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<h3>&nbsp&nbsp&nbsp₱ 1,100.00</h3></label></td>
+
+<td class="makulet"><input type=checkbox onclick=angeldreams.value=2500>
+<input type=hidden name=angeldreams value=0>
+<label for="angeldreams">Angel Dreams<h3>&nbsp&nbsp&nbsp₱ 2,500.00</h3></label></td>
+
+<td><input type=checkbox onclick=rosebox.value=1200>
+<input type=hidden name=rosebox value=0>
+<label for="rosebox">Rose in a box  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp   &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<h3>₱ 1,200.00</h3></label></td>
+
+<td><input type=checkbox onclick=lavender.value=2500>
+<input type=hidden name=lavender value=0>
+<label for="lavender">Lavender Love<h3>&nbsp&nbsp&nbsp₱ 2,500.00</h3></label></td>
+
+<td><input type=checkbox onclick=pack1.value=1785>
+<input type=hidden name=pack1 value=0> 
+<label for="pack1">Package 01  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<h3><br>&nbsp&nbsp&nbsp₱ 1,785.00</h3></label></td>
+</tr>
+
+<tr>
+<td><input type=checkbox onclick=summer.value=1600>
+<input type=hidden name=summer value=0>
+<label for="summer">Summer Elegance<h3>&nbsp&nbsp&nbsp₱ 1,600.00</h3></label></td>
+
+<td class="makulet"><input type=checkbox onclick=sunset.value=3000>
+<input type=hidden name=sunset value=0>
+<label for="sunset">Sunset Times<h3>&nbsp&nbsp&nbsp₱ 3,000.00</h3></label></td>
+
+<td><input type=checkbox onclick=yellowtulips.value=3995>
+<input type=hidden name=yellowtulips value=0> 
+<label for="yellowtulips">20 yellow Tulips Bouquet<h3>&nbsp&nbsp&nbsp₱ 3,995.00</h3></label></td>
+
+<td><input type=checkbox onclick=assortedtulips.value=3195>
+<input type=hidden name=assortedtulips value=0>
+<label for="assortedtulips">12 assorted Tulips round box<h3>&nbsp&nbsp&nbsp₱ 3,195.00</h3></label></td>
+
+<td><input type=checkbox onclick=pack2.value=2800>
+<input type=hidden name=pack2 value=0> 
+<label for="pack2">Package 02<h3><br>&nbsp&nbsp&nbsp₱ 2,800.00</h3></label></td>
+</tr>
+
+<tr>
+<td><input type=checkbox onclick=carnations.value=2500>
+<input type=hidden name=carnations value=0>
+<label for="carnations">20 Carnations & <br>Peruvian Lilies bouquet<h3>&nbsp&nbsp&nbsp₱ 2,500.00</h3></label></td>
+
+<td class="makulet"><input type=checkbox onclick=dazzling.value=1300>
+<input type=hidden name=dazzling value=0>
+<label for="dazzling">Dazzling Dreams<h3>&nbsp&nbsp&nbsp₱ 1,300.00</h3></label></td>
+
+<td><input type=checkbox onclick=pinkrose.value=1895>
+<input type=hidden name=pinkrose value=0>
+<label for="pinkrose">Pink Rose bouquet<h3>&nbsp&nbsp&nbsp₱ 1,895.00</h3></label></td>
+
+<td><input type=checkbox onclick=rainbow.value=3995>
+<input type=hidden name=rainbow value=0>
+<label for="rainbow">18 Rainbow Tulips<h3>&nbsp&nbsp&nbsp₱ 3,995.00</h3></label></td>
+
+<td><input type=checkbox onclick=pack3.value=6100>
+<input type=hidden name=pack3 value=0> 
+<label for="pack3">Package 03<h3><br>&nbsp&nbsp&nbsp₱ 6,100.00</h3></label></td>
+</tr>
+
+<tr>
+<td colspan=5 align=center>
+<input type=button value="Compute Total Amount" onclick=computeTotal();> &nbsp&nbsp&nbsp&nbsp
+<input type=reset value=Reset>
+</td>
+</tr>
+
+</table>
+
+</form>
+</body>
+</html>
